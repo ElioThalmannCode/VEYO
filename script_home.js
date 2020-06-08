@@ -29,13 +29,22 @@ function animation_menubar(x) {
 
   }
 }
+function color_bar_change() {
+  document.getElementById("bar1").style.backgroundColor = "rgb(11, 90, 0)";
+  document.getElementById("bar2").style.backgroundColor = "rgb(11, 90, 0)";
+  document.getElementById("bar3").style.backgroundColor = "rgb(11, 90, 0)";
+}
+function color_bar_back() {
+  document.getElementById("bar1").style.backgroundColor = "#009245";
+  document.getElementById("bar2").style.backgroundColor = "#009245";
+  document.getElementById("bar3").style.backgroundColor = "#009245";
+}
 function change_color() {
   let myElements = document.querySelectorAll(".cls-1");
   for (let i = 0; i < myElements.length; i++) {
-	myElements[i].style.fill = "red";
+	myElements[i].style.fill = "rgb(11, 90, 0)";
 }}
 function change_color_back() {
-  console.log("hi")
   let myElements = document.querySelectorAll(".cls-1");
   for (let i = 0; i < myElements.length; i++) {
 	myElements[i].style.fill = "#009245";
