@@ -1,12 +1,36 @@
 
 window.onscroll = function() {scrollFunction()};
 var on = false
+
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 1) {
-    document.getElementById("Ebene_1").style.width = "100px";
-  } else {
-    document.getElementById("Ebene_1").style.width = "200px";
+  var scrollPos = $(document).scrollTop();
+  var width = ""
+  width = 200 - scrollPos / 2
+  if (width <= 100) {
+    width = 100
   }
+  $('#Ebene_1').css({
+    'width': ''+ width +'px'
+});
+
+function EasyPeasyParallax() {
+  var scrollPos = $(document).scrollTop();
+  var targetOpacity = 1;
+  targetOpacity = scrollPos / 500;
+  $('nav').css({
+      'background-color': 'rgba(20, 20, 20  , '+ targetOpacity +')'
+  });
+
+};
+
+
+$(function(){
+  $(window).scroll(function() {
+    EasyPeasyParallax();
+  });
+});
+
+
 }
 function open_menu(x) {
   document.getElementById("menu_screen").style.visibility = "visible"
@@ -30,14 +54,14 @@ function animation_menubar(x) {
   }
 }
 function color_bar_change() {
-  document.getElementById("bar1").style.backgroundColor = "rgb(11, 90, 0)";
-  document.getElementById("bar2").style.backgroundColor = "rgb(11, 90, 0)";
-  document.getElementById("bar3").style.backgroundColor = "rgb(11, 90, 0)";
-}
-function color_bar_back() {
   document.getElementById("bar1").style.backgroundColor = "#009245";
   document.getElementById("bar2").style.backgroundColor = "#009245";
   document.getElementById("bar3").style.backgroundColor = "#009245";
+}
+function color_bar_back() {
+  document.getElementById("bar1").style.backgroundColor = "white";
+  document.getElementById("bar2").style.backgroundColor = "white";
+  document.getElementById("bar3").style.backgroundColor = "white";
 }
 function change_color() {
   let myElements = document.querySelectorAll(".cls-1");
