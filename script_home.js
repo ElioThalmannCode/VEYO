@@ -13,12 +13,12 @@ function scrollFunction() {
     'width': ''+ width +'px'
 });
 
-function EasyPeasyParallax() {
+function opacity_changer() {
   var scrollPos = $(document).scrollTop();
   var targetOpacity = 1;
   targetOpacity = scrollPos / 500;
   $('nav').css({
-      'background-color': 'rgba(20, 20, 20  , '+ targetOpacity +')'
+      'background-color': 'rgba(48, 48, 48  , '+ targetOpacity +')'
   });
 
 };
@@ -26,7 +26,7 @@ function EasyPeasyParallax() {
 
 $(function(){
   $(window).scroll(function() {
-    EasyPeasyParallax();
+    opacity_changer();
   });
 });
 

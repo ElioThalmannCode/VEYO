@@ -35,11 +35,11 @@ a {
 #menu_screen {
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 30%;
     height: 100%;
     top: 0;
-    left: 0;
-    background-color:rgb(44, 44, 44);
+    right: 0;
+    background-image: linear-gradient(315deg, #333333 0%, #2e2e2e 100%);
     visibility: hidden;
     transition: opacity .6s;
     font-family: sans-serif;
@@ -53,16 +53,16 @@ a {
     height: 100%;
     
 }
-#home_icon_svg, #person_icon_svg, #services_icon_svg, #contact_icon_svg {
-    fill: white;
-    transition: fill 0.5s ease;
-    width: 500px;
+#home, #uberuns, #service, #contact{
+    font-size: 80px;
+    color: white;
     cursor: pointer;
+    transition: color .5s ease;
 }
-#home_icon_svg:hover, #person_icon_svg:hover, #services_icon_svg:hover, #contact_icon_svg:hover {
-    fill: #009245;
+#home:hover , #uberuns:hover, #service:hover, #contact:hover{
+    color: #009245;
+    text-decoration: underline 2.5px;
 }
-
 #box {
     display: inline-block;
     cursor: pointer;
