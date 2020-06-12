@@ -95,10 +95,3 @@ a {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
-
-  #banner {
-      background-image: url(home_bg.jpg);
-      background-size: 100%;
-      width: 100%;
-      height: 1000000px;
-  }
