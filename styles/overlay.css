@@ -29,6 +29,9 @@ a {
     z-index: 100;
     margin-top: 10px;
 }
+.cls-3{
+    transition: fill .6s;
+}
 .content {
     margin-top: 100px;
 }
@@ -95,3 +98,4 @@ a {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+

@@ -65,11 +65,18 @@ function color_bar_back() {
 }
 function change_color() {
   let myElements = document.querySelectorAll(".cls-1");
+  let myElements2 = document.querySelectorAll(".cls-3");
   for (let i = 0; i < myElements.length; i++) {
-	myElements[i].style.fill = "rgb(11, 90, 0)";
-}}
+  myElements[i].style.fill = "green";
+  for (let i = 0; i < myElements2.length; i++) {
+    myElements2[i].style.fill= "rgba(255, 255, 255 , 1 )"
+  }}}
+
 function change_color_back() {
   let myElements = document.querySelectorAll(".cls-1");
+  let myElements2 = document.querySelectorAll(".cls-3");
   for (let i = 0; i < myElements.length; i++) {
-	myElements[i].style.fill = "#009245";
-}}
+  myElements[i].style.fill = "#009245";
+  for (let i = 0; i < myElements2.length; i++) {
+  myElements2[i].style.fill= "rgba(255, 255, 255  , 0)"
+}}}
