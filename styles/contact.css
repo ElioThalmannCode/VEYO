@@ -31,10 +31,10 @@ html, body {
 }
 .contact_data {
     width: fit-content;
-    height: 500px;
+    height: fit-content;
     z-index: 1;
     position: absolute;
-    top: 270px;
+    top: 420px;
     left: 620px;
 }
 #map {
