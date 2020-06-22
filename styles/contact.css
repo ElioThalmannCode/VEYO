@@ -1,10 +1,55 @@
+<<<<<<< HEAD
 .content_box {
     background-image: linear-gradient(315deg, #404040 0%, #303030 100%);
     width: 100%;
     height: fit-content;
+=======
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 10000px;
+}
+
+.content_box {
+    background-image: linear-gradient(315deg, #505050 0%, #404040 100%);
+    width: 100%;
+    height: 900px;
+>>>>>>> 8cfe2c6e67d64d339a80134a329969c1a42900f2
     top: 0;
     left: 0;
     right: 0;
     position: absolute;
     z-index: -1;
+<<<<<<< HEAD
+=======
+}
+.diagonal_box {
+    margin-top: 150px;
+    margin-left: -200px;
+    width: 122%;
+    height: 700px;
+    background-color: #fff;
+    margin-left: -100px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 10px 10px 15px rgba(10, 10, 10, .7);
+    transform:
+        rotate(-3.5deg);
+    
+
+}
+.contact_data {
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    position: absolute;
+    top: 420px;
+    left: 620px;
+}
+#map {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    margin-top: 270px;
+>>>>>>> 8cfe2c6e67d64d339a80134a329969c1a42900f2
 }
